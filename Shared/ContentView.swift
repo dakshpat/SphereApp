@@ -16,8 +16,8 @@ struct ContentView: View {
     
 
     func sphereVolume() -> Double{
-        let sphereRadius = 0.0
-        let volume = 4/3*Double.pi*sphereRadius
+        let sphereRadius = 5.0
+        let volume = 4/3*Double.pi*pow(sphereRadius,3)
         print(volume)
         return volume
     }
