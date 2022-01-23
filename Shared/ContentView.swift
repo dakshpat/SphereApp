@@ -14,6 +14,7 @@ struct ContentView: View {
     @State var sphereSurfaceArea = 0.0
     @State var boxVolume = 0.0
     @State var boxSurfaceArea = 0.0
+    var sphereModel = Sphere()
     
     var body: some View {
         
@@ -23,7 +24,7 @@ struct ContentView: View {
                 .padding(.bottom, 0)
     
             TextField("Enter Radius", value: $sphereRadius, format: .number)
-    
+            
             Text("Sphere Volume: \(sphereVolume)")
                 .padding(0.5)
             Text("Sphere SurfaceArea: \(sphereSurfaceArea)")
@@ -32,19 +33,19 @@ struct ContentView: View {
                 .padding(0.5)
             Text("Bounding Box SurfaceArea: \(boxSurfaceArea)")
             .padding(0.5)
+            .padding(.bottom)
+            
+            Button("Calculate"){
+                sphereModel.updateSphereRadius(sphereRadius: sphereRadius)
+                sphereVolume = sphereModel.sphereVolume
+                sphereSurfaceArea = sphereModel.sphereSurfaceArea
+                boxVolume = sphereModel.boxVolume
+                boxSurfaceArea = sphereModel.boxSurfaceArea
+            }
+                .padding()
             
         }
-        
-        
-        Button("Calculate", action:{
-            sphereVolume = (4/3)*Double.pi*pow(sphereRadius,3)
-            sphereSurfaceArea = 4*Double.pi*pow(sphereRadius,2)
-            boxSurfaceArea = 6*pow(2*sphereRadius,2)
-            boxVolume = pow(2*sphereRadius,3)
-            
-        })
-            .padding()
-        
+
     
     }
 }
