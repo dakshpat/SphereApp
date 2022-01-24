@@ -25,13 +25,13 @@ struct ContentView: View {
     
             TextField("Enter Radius", value: $sphereRadius, format: .number)
             
-            Text("Sphere Volume: \(sphereVolume)")
+            Text("Sphere Volume: \(sphereVolume, specifier: "%.2f")")
                 .padding(0.5)
-            Text("Sphere SurfaceArea: \(sphereSurfaceArea)")
+            Text("Sphere SurfaceArea: \(sphereSurfaceArea, specifier: "%.2f")")
                 .padding(0.5)
-            Text("Bounding Box Volume: \(boxVolume)")
+            Text("Bounding Box Volume: \(boxVolume,specifier: "%.2f")")
                 .padding(0.5)
-            Text("Bounding Box SurfaceArea: \(boxSurfaceArea)")
+            Text("Bounding Box SurfaceArea: \(boxSurfaceArea,specifier: "%.2f")")
             .padding(0.5)
             .padding(.bottom)
             

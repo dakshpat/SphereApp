@@ -21,6 +21,8 @@
 		B137D86F279E006400E668D5 /* Sphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = B137D829279B344D00E668D5 /* Sphere.swift */; };
 		B137D870279E006A00E668D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B137D7EE279B316B00E668D5 /* ContentView.swift */; };
 		B137D871279E006B00E668D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B137D7EE279B316B00E668D5 /* ContentView.swift */; };
+		B137D873279F425500E668D5 /* Sphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = B137D829279B344D00E668D5 /* Sphere.swift */; };
+		B137D874279F425600E668D5 /* Sphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = B137D829279B344D00E668D5 /* Sphere.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -327,6 +329,7 @@
 			files = (
 				B137D808279B316E00E668D5 /* Tests_iOSLaunchTests.swift in Sources */,
 				B137D806279B316E00E668D5 /* Tests_iOS.swift in Sources */,
+				B137D873279F425500E668D5 /* Sphere.swift in Sources */,
 				B137D870279E006A00E668D5 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +340,7 @@
 			files = (
 				B137D814279B316E00E668D5 /* Tests_macOSLaunchTests.swift in Sources */,
 				B137D812279B316E00E668D5 /* Tests_macOS.swift in Sources */,
+				B137D874279F425600E668D5 /* Sphere.swift in Sources */,
 				B137D871279E006B00E668D5 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
