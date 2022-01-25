@@ -31,6 +31,30 @@ class Tests_iOS: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
+    func testSphereIniutialization() async{
+        let radius = 1.0
+        
+        let mySphere = Sphere()
+        
+        mySphere.updateSphereRadius(sphereRadius: radius)
+        
+        let sphereVolume = mySphere.sphereVolume
+        
+        XCTAssertEqual(sphereVolume, (4/3)*Double.pi, accuracy: 1.0E-7, "was not equal to this resolution")
+        
+        let sphereSurfaceArea = mySphere.sphereSurfaceArea
+        
+        XCTAssertEqual(sphereSurfaceArea, 4*Double.pi, accuracy: 1.0E-7, "was not equal to this resolution")
+        
+        let boxVolume = mySphere.boxVolume
+        
+        XCTAssertEqual(boxVolume, pow(2, 3), accuracy: 1.0E-7, "was not equal to this resolution")
+        
+        let boxSurfaceArea = mySphere.boxSurfaceArea
+        
+        XCTAssertEqual(boxSurfaceArea, 4.0*6.0, accuracy: 1.0E-7, "was not equal to this resolution")
+    }
+    
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
             // This measures how long it takes to launch your application.
