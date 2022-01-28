@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
+    // Created state variable to print out
     @State var sphereRadius = 0.0
     @State var sphereVolume = 0.0
     @State var sphereSurfaceArea = 0.0

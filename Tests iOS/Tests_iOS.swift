@@ -31,6 +31,7 @@ class Tests_iOS: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
+    //tests basic values and checks if it is accurate 
     func testSphereIniutialization() async{
         let radius = 1.0
         
